@@ -3,18 +3,26 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --host",
     "astro": "astro",
     "emulate": "firebase emulators:start"
   },
   "dependencies": {
+    "@astrojs/node": "^9.3.1",
     "@astrojs/sitemap": "^3.4.1",
     "@fontsource-variable/orbitron": "^5.2.6",
     "astro": "^5.12.3",
-    "firebase-tools": "^14.11.1",
-    "sharp": "^0.34.3"
-  }
+    "autoprefixer": "^10.4.21",
+    "dotenv": "^17.2.1",
+    "postcss": "^8.5.6",
+    "sharp": "^0.33.5"
+  },
+  "browserslist": [
+    ">0.5%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
